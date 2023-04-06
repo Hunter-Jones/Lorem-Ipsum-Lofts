@@ -1,0 +1,22 @@
+{
+  "name": "lorem-ipsum-lofts",
+  "version": "1.0.0",
+  "description": "Template apartment complex website",
+  "main": "node.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node.js": "^0.0.1-security"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Hunter-Jones/Lorem-Ipsum-Lofts"
+  },
+  "keywords": [
+    "human-computer-interface"
+  ],
+  "author": "Hunter Jones, Henry Webb, Jackson Joseph, Melissa Underwood",
+  "license": "MIT"
+}
