@@ -6,7 +6,7 @@
 	<title></title>
 
 	<link rel="stylesheet" href="/main.css" />
-	<link rel="stylesheet" href="/css/rent.css" />
+	<link rel="stylesheet" href="/css/forum.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap" rel="stylesheet">
@@ -25,5 +25,22 @@
 </div>
 	<h1>Forum</h1>
 	<p> wip </p>
+
+	<form>
+		<label for="name">Username</label><br>
+		<input type="text" name="username">
+		<input type="text" name="header">
+		<textarea name="message" style="width:600px; height:200px;"></textarea>
+	</form>
+
+	<p>Forum Post</p>
+	<div id="forum-posts">
+		<!-- Messages loaded with js following the format -->
+<!-- 		<p class="post-username">Usrname</p>
+		<p class="post-header">Title of the Post</p>
+		<p class="post-message">Contents of the post</p> -->
+	</div>
+
+	<script type="text/javascript" src="/js/forum.js"></script>
 </body>
 </html>
