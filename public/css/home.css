@@ -1,0 +1,28 @@
+/* PAGE CONTENT */
+
+#content {
+    display:flex;
+    max-width: 1000px;
+    margin:30px auto;
+    padding:10px 20px;
+    color:#0D0C1D;
+}
+
+#content .left {
+    flex:65%;
+}
+
+#content .right {
+    flex:35%;
+}
+
+#content img {
+    width:400px;
+}
+
+.info-table {
+    background-color:#f0f0f0;
+    padding:15px;
+    border:solid 1px #373E40;
+    float:right;
+}
