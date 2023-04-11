@@ -25,5 +25,25 @@
 </div>
 	<h1>Forum</h1>
 	<p> wip </p>
+
+	<form action="/resident-links/forum" method="post">
+		<label for="name">Username</label><br>
+		<input type="text" name="username">
+		<input type="text" name="header">
+		<textarea type="text" name="message" style="width:600px; height:200px;"></textarea>
+		<button type="submit">Submit</button>
+	</form>
+
+	<p>Forum Post</p>
+	<div id="forum-posts">
+		<!-- Messages loaded with js following the format -->
+<!-- 		<p class="post-username">Usrname</p>
+		<p class="post-header">Title of the Post</p>
+		<p class="post-message">Contents of the post</p> -->
+	</div>
+
+	<script type="text/javascript" src="/js/forum.js"></script>
+=======
+>>>>>>> 3d167cf002e59e74f8b4032897ba1017022cb72a
 </body>
 </html>

@@ -2,13 +2,12 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+
+app.use(express.json());       
+app.use(express.urlencoded({extended: true}));
+
 app.set('views', path.join(__dirname + '/views'));
-
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.listen(3000, () => {
-  console.log("Application started and Listening on port 3000");
-});
 
 app.get("/", (req, res) => {
   // res.send("Hello world!");
@@ -57,4 +56,21 @@ app.get("/resident-links/rent", (req, res) => {
 });
 app.get("/resident-links/building-requests", (req, res) => {
   res.sendFile(__dirname + "/views/building-requests.html");
+});
+
+
+app.post("/resident-links/forum/", (req, res) => {
+  const username = req.body.username;
+  const header = req.body.header;
+  const message = req.body.message
+  // res.send("Data received");
+  console.log("Username: " + username);
+  console.log("Password: " + header);
+  console.log("Meessage: " + message);
+  console.log("Data Recieved")
+  res.redirect('back');
+});
+
+app.listen(3000, () => {
+  console.log("Application started and Listening on port 3000");
 });
