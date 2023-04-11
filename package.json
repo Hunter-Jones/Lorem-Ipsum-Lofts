@@ -5,10 +5,11 @@
   "main": "node.js",
   "dependencies": {
     "express": "^4.18.2",
-    "node.js": "^0.0.1-security"
+    "node.js": "^0.0.1-security",
+    "nodemon": "^2.0.22"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
