@@ -1,1 +1,33 @@
-/**/
+h1{
+    text-align:center;
+}
+body{
+    text-align:center;
+}
+form {
+    display: inline-grid;
+}
+label{
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+input{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 32px;
+}
+/* WIP - trying to get form in between to images*/
+.row{
+
+}
+.left_image{
+    float: left;
+    width: 25%;
+
+}
+.right_image {
+    float: left;
+    width: 60%;
+}
