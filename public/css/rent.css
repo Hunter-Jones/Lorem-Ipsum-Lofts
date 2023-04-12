@@ -1,1 +1,15 @@
-/**/
+#content {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    color: black;
+}
+
+    #content .left {
+        flex: 65%;
+    }
+
+    #content .right {
+        flex: 35%;
+    }
