@@ -1,1 +1,65 @@
-/**/
+/*Slider From W3 Schools
+Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
+*/
+.slider {
+    -webkit-appearance: none; /*Overides Default CSS Syles*/
+    width: 25%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #373E40;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #373E40;
+    cursor: pointer;
+  }
+input[type=button], input[type=submit], input[type=reset], input[type=text] {
+    color: black;
+    padding: 16px 32px;
+    text-decoration: wavy;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+.combo{
+    padding:10px;
+}
+textarea {
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+h1{
+    text-align:center;
+}
+body {
+    text-align: center;
+}
+label {
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+}
