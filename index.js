@@ -1,13 +1,25 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-
-
+const fs = require("fs")
 app.use(express.json());       
 app.use(express.urlencoded({extended: true}));
 
 app.set('views', path.join(__dirname + '/views'));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// forumData = require("forum")
+// var mongo = require('mongodb');
+
+// var MongoClient = require('mongodb').MongoClient;
+// var url = "mongodb://localhost:27017/mydb";
+
+// MongoClient.connect(url, function(err, db) {
+//   if (err) throw err;
+//   console.log("Database created!");
+//   db.close();
+// });
+
 
 app.get("/", (req, res) => {
   // res.send("Hello world!");
@@ -68,6 +80,22 @@ app.post("/resident-links/forum/", (req, res) => {
   console.log("Password: " + header);
   console.log("Meessage: " + message);
   console.log("Data Recieved")
+
+  var data = {
+    username: username,
+    header: header,
+    message: message
+  };
+
+  data = JSON.stringify(data);
+
+  fs.appendFile("forum.json", data, (error) => {
+    if (error) {
+      console.error(error);
+      throw error;
+    }
+  })
+
   res.redirect('back');
 });
 
