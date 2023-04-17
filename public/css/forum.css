@@ -1,4 +1,70 @@
-.forum-post {
-	border: 2px solid black;
-	margin-bottom: 16px;
+/* PAGE CONTENT */
+
+#content {
+    max-width: 1000px;
+    margin:30px auto;
+    padding:10px 20px;
+    color:#0D0C1D;
+	background-color: #f0f0f0;
+}
+
+#content h1 { text-align:center;}
+
+.left {
+	text-align: right;
+	width:25%;
+	float:left;
+	font-weight:bold;
+}
+
+.right {
+	width:70%;
+	float:right;
+}
+
+/* Clear floats after the columns */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+@media screen and (max-width: 600px) {
+  .left, .right, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+	text-align:left;
+  }
+}
+
+/* FORUM */ 
+
+input[type=text], select, textarea {
+  width: 75%;
+  padding: 10px;
+  margin:10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.left label {
+	margin:10px;
+}
+#form-submit {
+	float:right;
+	padding:5px 10px;
+	background-color:#305252;
+	color:#ffffff;
+	border: solid 1.2px #373E40;
+	border-radius:5px;
+	font-family: 'Karla', sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+#forum-posts {
+	background-color:white;
+	border: 1px solid #000000;
 }

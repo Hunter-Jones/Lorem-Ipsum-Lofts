@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="header">
-	<h1 class="title"><span style="font-weight:700;">Lorem Ipsum</span> Apartments</h1>
+	<h1 class="title"><span style="font-weight:700;">Alpine</span> Apartments</h1>
 	<div class="topnav">
 		<button><a href="../">Home</a></button>
 		<button><a href="../floor">Floor Plan & Amenities</a></button>
@@ -23,17 +23,43 @@
 		<button><a href="../resident-links">Resident Links</a></button>
 	</div>
 </div>
-	<h1>Forum</h1>
-	<p> wip </p>
 
+<div id="content">
+	<h1>Leave a message</h1>
 	<form action="/resident-links/forum" method="post">
-		<label for="name">Username</label><br>
-		<input required type="text" id="form-username" name="username">
-		<input required type="text" id="form-header" name="header">
-		<textarea required type="text" id="form-message" name="message" style="width:600px; height:200px;"></textarea>
-		<button type="submit" id="form-submit">Submit</button>
-	</form>
+		<div class="row">
+			<div class="left">
+				<label for="name">Username</label>
+			</div>
+			<div class="right">
+				<input required type="text" id="form-username" name="username">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="left">
+				<label> Subject</label>
+			</div>
+			<div class="right">
+				<input required type="text" id="form-header" name="header">
+			</div>
+		</div>
 
+		<div class="row">
+			<div class="left">
+				<label> Text</label>
+			</div>
+			<div class="right">
+				<textarea required type="text" id="form-message" name="message"></textarea>
+			</div>
+		</div>
+		<div class="row">
+		<button type="submit" id="form-submit">Submit</button>
+		</div>
+	</form>
+</div>
+
+<div id="content">
 	<p>Forum Post</p>
 	<div id="forum-posts">
 		<!-- Messages loaded with js following the format -->
@@ -43,5 +69,6 @@
 	</div>
 	<script type="text/javascript" src="forum.json" id="inputfile"></script>
 	<script type="text/javascript" src="/js/forum.js"></script>
+</div>
 </body>
 </html>
