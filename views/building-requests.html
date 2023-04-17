@@ -29,46 +29,21 @@
 	<!-- Work on this more later-->
 	<form id="form">
 		<label for="user_name">Name:</label>
-		<input type="text" name="" id="user_name" placeholder="Enter Name"><br />
+		<input required type="text" name="" id="user_name" placeholder="Enter Name"><br />
 		<label for="password">Unit #:</label>
-		<input type="text" name="" id="unit" placeholder="Enter Unit #"><br />
+		<input required type="text" name="" id="unit" placeholder="Enter Unit #"><br />
 		<label for="phone">Phone #:</label>
-		<input type="text" name="" id="phone" placeholder="(XXX)-XXX-XXXX"><br />
+		<input required type="text" name="" id="phone" placeholder="(XXX)-XXX-XXXX"><br />
 
 
 		<label for="issue">Issue:</label><br />
-		<textarea name="" id="issue" placeholder="Enter your issue here" cols="50" rows="8"></textarea><br />
-		<button>Submit</button>
+		<textarea required name="" id="issue" placeholder="Enter your issue here" cols="50" rows="8"></textarea><br />
+		<button type="submit">Submit</button>
 
 		<div id="result"></div>
 	</form>
 
 </body>
-<script>
-	let form = document.getElementById('form')
-
-	form.addEventListener('submit', (e) => {
-
-		e.preventDefault()
-
-		let name = document.getElementById('user_name').value
-
-		let unit = document.getElementById('unit').value
-
-		let phone = document.getElementById('phone').value
-
-        let issue = document.getElementById('issue').value
-
-		if (name == "" || unit == "" || phone == "" || issue == "") {
-			alert("Please enter all the fields")
-		}
-		else {
-			document.getElementById('result').innerHTML = `
-			<p>Thank you, ${name}, for submitting your issue. We will visit you at unit ${unit} and contact you by phone at ${phone}
-			no less than 24 hours in advance. The issue being addressed is:</p>
-			<p>${issue}</p>
-			`
-		}
-	})
+<script type="text/javascript" src="/js/building-requests.js"></script>
 </script>
 </html>
