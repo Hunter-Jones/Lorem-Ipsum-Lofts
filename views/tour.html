@@ -34,18 +34,19 @@
 		<div class="center_form">
 			<form id="tour_form">
 				<label for="first_name">First name:</label>
-				<input type="text" name="" id="first_name" placeholder="Enter First Name"><br />
+				<input required type="text" name="" id="first_name" placeholder="Enter First Name"><br />
 				<label for="last_name">Last name:</label>
-				<input type="text" name="" id="last_name" placeholder="Enter Last Name"><br />
+				<input required type="text" name="" id="last_name" placeholder="Enter Last Name"><br />
 				<label for="phone_num">Phone #:</label>
-				<input type="text" name="" id="phone_num" placeholder="(XXX)-XXX-XXXX"><br />
+				<input required type="text" name="" id="phone_num" placeholder="(XXX)-XXX-XXXX"><br />
 				<label for="date">Date:</label>
 				<input type="date" name="" id="date"><br>
 				<label for="date">Time:</label>
 				<input type="time" name="" id="time"><br><br>
-				<input type="submit" onclick="reserveTour()" value="Submit">
+				<button id="submit" type="submit">Submit</button>
 			</form>
 		</div>
+		<div id="result"></div>
 
 	</div>
 	<script type="text/javascript" src="/js/tour.js"></script>
