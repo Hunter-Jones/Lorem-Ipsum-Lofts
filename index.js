@@ -8,18 +8,6 @@ app.use(express.urlencoded({extended: true}));
 app.set('views', path.join(__dirname + '/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// forumData = require("forum")
-// var mongo = require('mongodb');
-
-// var MongoClient = require('mongodb').MongoClient;
-// var url = "mongodb://localhost:27017/mydb";
-
-// MongoClient.connect(url, function(err, db) {
-//   if (err) throw err;
-//   console.log("Database created!");
-//   db.close();
-// });
-
 
 app.get("/", (req, res) => {
   // res.send("Hello world!");
@@ -63,6 +51,10 @@ app.get("/resident-links.css", (req, res) => {
 app.get("/resident-links/forum", (req, res) => {
   res.sendFile(__dirname + "/views/forum.html");
 });
+app.get("/resident-links/forum.json", (req, res) => {
+  res.sendFile(__dirname + "/forum.json");
+});
+
 app.get("/resident-links/rent", (req, res) => {
   res.sendFile(__dirname + "/views/rent.html");
 });
@@ -72,29 +64,26 @@ app.get("/resident-links/building-requests", (req, res) => {
 
 
 app.post("/resident-links/forum/", (req, res) => {
-  const username = req.body.username;
-  const header = req.body.header;
-  const message = req.body.message
+  const username_ = req.body.username;
+  const header_ = req.body.header;
+  const message_ = req.body.message
   // res.send("Data received");
-  console.log("Username: " + username);
-  console.log("Password: " + header);
-  console.log("Meessage: " + message);
+  console.log("Username: " + username_);
+  console.log("Password: " + header_);
+  console.log("Meessage: " + message_);
   console.log("Data Recieved")
 
-  var data = {
-    username: username,
-    header: header,
-    message: message
+var forumPost = {
+  username: username_, 
+  header: header_, 
+  message: message_
   };
 
-  data = JSON.stringify(data);
-
-  fs.appendFile("forum.json", data, (error) => {
-    if (error) {
-      console.error(error);
-      throw error;
-    }
-  })
+fs.readFile('forum.json', function (err, data) {
+    var json = JSON.parse(data)
+    json.forum.push(forumPost)
+    fs.writeFileSync("forum.json", JSON.stringify(json))
+})
 
   res.redirect('back');
 });

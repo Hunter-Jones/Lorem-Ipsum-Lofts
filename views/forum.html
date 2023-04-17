@@ -28,9 +28,9 @@
 
 	<form action="/resident-links/forum" method="post">
 		<label for="name">Username</label><br>
-		<input type="text" id="form-username" name="username">
-		<input type="text" id="form-header" name="header">
-		<textarea type="text" id="form-message" name="message" style="width:600px; height:200px;"></textarea>
+		<input required type="text" id="form-username" name="username">
+		<input required type="text" id="form-header" name="header">
+		<textarea required type="text" id="form-message" name="message" style="width:600px; height:200px;"></textarea>
 		<button type="submit" id="form-submit">Submit</button>
 	</form>
 
@@ -41,7 +41,7 @@
 		<p class="post-header">Title of the Post</p>
 		<p class="post-message">Contents of the post</p> -->
 	</div>
-
+	<script type="text/javascript" src="forum.json" id="inputfile"></script>
 	<script type="text/javascript" src="/js/forum.js"></script>
 </body>
 </html>
