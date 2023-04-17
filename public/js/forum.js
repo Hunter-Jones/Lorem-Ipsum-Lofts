@@ -29,8 +29,8 @@ fetch('./forum.json')
 function addForumPosts(item, index, arr, div=FORUM_DIV) {
   // console.log(index + " " + item.username)
   div.innerHTML += "<div class='forum-post'>" + 
-  				"<p class='post-username'>" + item.username + "</p>" +
-  				"<p class='post-header'>" + item.header + "</p>" +
+  				"<p class='post-username'><i class='fa-solid fa-user'></i>" + item.username + "</p>" +
+  				"<h3 class='post-header'>" + item.header + "</h3>" +
   				"<p class='post-message'>" + item.message + "</p>" +
   				"</div>"
 }
