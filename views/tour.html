@@ -23,30 +23,41 @@
 			<button><a href="../resident-links">Resident Links</a></button>
 		</div>
 	</div>
+	<div id="content">
 	<h1>Would you like to tour our apartments? We'd love to show you! Sign up below.</h1>
 	<div class="row">
-		<div class="left_image">
-			<img src="/images/tour_image_1.jpg" width="700" height="800" />
-		</div>
-		<div class="right_image">
-			<img src="/images/tour_image_2.jpg" width="700" height="800"/>
-		</div>
-		<div class="center_form">
+			<img class="left_image" src="/images/tour_image_1.jpg"/>
+			<img class="right_image" src="/images/tour_image_2.jpg"/>
+	</div>
 			<form id="tour_form">
-				<label for="first_name">First name:</label>
-				<input required type="text" name="" id="first_name" placeholder="Enter First Name"><br />
-				<label for="last_name">Last name:</label>
-				<input required type="text" name="" id="last_name" placeholder="Enter Last Name"><br />
-				<label for="phone_num">Phone #:</label>
-				<input required type="text" name="" id="phone_num" placeholder="(XXX)-XXX-XXXX"><br />
-				<label for="date">Date:</label>
-				<input type="date" name="" id="date"><br>
-				<label for="date">Time:</label>
-				<input type="time" name="" id="time"><br><br>
-				<button id="submit" type="submit">Submit</button>
+				<div class="row">
+					<label for="first_name">First name:</label><br>
+					<input required type="text" name="" id="first_name" placeholder="Enter First Name">
+				</div>
+				<div class="row">
+					<label for="last_name">Last name:</label><br>
+					<input required type="text" name="" id="last_name" placeholder="Enter Last Name">
+				</div>
+				<div class="row">
+					<label for="phone_num">Phone #:</label><br>
+					<input required type="text" name="" id="phone_num" placeholder="(XXX)-XXX-XXXX">
+				</div>
+				<div class="row">
+					<label for="date">Date:</label><br>
+					<input type="date" name="" id="date">
+				</div>
+				<div class="row">
+					<label for="date">Time:</label><br>
+					<input type="time" name="" id="time">
+				</div>
+				<div class="row">
+					<button id="submit" type="submit">Submit</button>
+				</div>
 			</form>
-		</div>
+
+		<div class="row">
 		<div id="result"></div>
+		
 
 	</div>
 	<script type="text/javascript" src="/js/tour.js"></script>

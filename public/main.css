@@ -7,7 +7,6 @@ body {
 h2 {
     padding:0px 0px 10px 0px;
     margin:0px;
-    text-decoration:underline;
 }
 
 /* HEADER & TOP NAV */
@@ -60,4 +59,25 @@ h2 {
 
 .topnav a:active {
     background-color: #000000;
+}
+
+/* CONTAINER */
+#content {
+    max-width:75%;
+    margin:30px auto;
+    padding:10px 20px;
+    color:#0D0C1D;
+	background-color: #f0f0f0;
+}
+
+#content h1 { text-align:center;}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  button:hover {
+	cursor:pointer;
 }

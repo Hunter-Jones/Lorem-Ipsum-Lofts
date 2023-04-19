@@ -60,6 +60,10 @@ body {
     text-align:center;
 }
 
+form {
+    margin:20px;
+}
+
 label {
     margin-right: 20px;
     margin-bottom: 5px;
@@ -84,19 +88,29 @@ input{
     display:block;
     clear:both;
 }
-#contact-info{
-    width: 30%;
-    float: left;
-    /*padding-left: 10%;*/
-    margin-left: 20%;
+
+.left {
+	text-align: right;
+	width:50%;
+	float:left;
+	font-weight:bold;
 }
-#appartment-specifications{
-    width: 30%;
-    float: right;
-    /*padding-right: 10%;
-    padding-top: 5%;*/
-    margin-right: 20%;
+
+.right {
+	width:50%;
+	float:right;
 }
-#apply-button{
-    clear: both;
+
+#submit {
+    float:right;
+	padding:5px 10px;
+	background-color:#305252;
+	color:#ffffff;
+	border: solid 1.2px #373E40;
+	border-radius:5px;
+	font-family: 'Karla', sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin-right:25%;
 }

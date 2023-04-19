@@ -4,31 +4,60 @@ h1{
 body{
     text-align:center;
 }
-form {
-    display: inline-grid;
+
+.left {
+	text-align: right;
+	width:50%;
+	float:left;
+	font-weight:bold;
 }
-label{
-    margin-right: 20px;
-    margin-bottom: 5px;
+
+.right {
+	width:50%;
+	float:right;
+}
+
+.row { 
+    margin-bottom:10px;
+}
+form {
+    margin:20px;
+    width:100%;
+}
+label {
     font-weight: bold;
     font-size: large;
 }
-input, #submit {
-    width: 250px;
-    height: 50px;
-    margin-bottom: 32px;
+
+input[type=text], input[type=date], input[type=time], select, textarea {
+    width: 300px;
+    padding: 10px;
+    margin:10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+#submit {
+	padding:5px 10px;
+	background-color:#305252;
+	color:#ffffff;
+	border: solid 1.2px #373E40;
+	border-radius:5px;
+	font-family: 'Karla', sans-serif;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size: 15px;
 }
 
-/* WIP - trying to get form in between to images*/
-.row{
-
-}
 .left_image{
     float: left;
-    width: 25%;
+    width: 50%;
 
 }
 .right_image {
     float: left;
-    width: 60%;
+    width: 50%;
 }
+
+

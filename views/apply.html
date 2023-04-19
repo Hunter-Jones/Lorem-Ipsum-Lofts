@@ -21,10 +21,10 @@
 		<button><a href="../resident-links">Resident Links</a></button>
 	</div>
 </div>
+<div id="content">
 	<h1>Apply</h1>
-			
 	<form id="apply_form">
-		<div id = "contact-info" class="clearfix">
+		<div class="left">
 			<b>Contact Info</b><br><br>
 			<label	label for="name"> Name</label>
 			<input required type="type" id="name" name="name" placeholder="(first, last)"><br></br>
@@ -35,8 +35,8 @@
 			<br>
 		</div>
 		
-		<div id ="appartment-specifications" class ="clearfix">
-			<b>Appartment Specifications</b><br><br>
+		<div class="right">
+			<b>Apartment Specifications</b><br><br>
 			<label for="Bed"> Beds:</label>
 			<select name="Bed" id="Bed">
 				<option value="Select">Select </option>
@@ -67,12 +67,16 @@
 			}
 			</script>	
 		</div>
-		<div id = "apply-button">
-			<input type="submit" onclick="apply()" value="Apply">
+		<div class="row">
+			<button id="submit" type="submit" onclick="apply()">Submit</button>
 		</div>
+			
 	</form>
-	
+</div>
+<div id="content" style="background-color: #fff;">
 	<div id="result"></div>
+</div>
+
 	</body>
 	<script type="text/javascript" src="/js/apply.js"></script>
 </html>
