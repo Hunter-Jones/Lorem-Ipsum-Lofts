@@ -22,29 +22,54 @@
 	</div>
 </div>
 	<h1>Apply</h1>
-		Contact Info<br>
-	<form id="apply_form">
-		<label for="name"> Name</label>
-		<input required type="type" id="name" name="name" placeholder="(first, last)"><br></br>
-		<label for="phone"> Phone Number</label>
-		<input required type="type" id="phone" name="phone" placeholder="(XXX)-XXX-XXXX"><br></br>
-		<label for="Email"> Email</label>
-		<input required type="type" id="Email" name="Email" placeholder="XXXXXX@XXXX.com"><br></br>
-		<br>
+			
+	<form>
+		<div id = "contact-info" class="clearfix">
+			<b>Contact Info</b><br><br>
+			<label	label for="name"> Name</label>
+			<input type="type" id="name" name="name" placeholder="(first, last)"><br></br>
+			<label for="phone"> Phone Number</label>
+			<input type="tel" id="phone" name="phone" placeholder="(XXX)-XXX-XXXX"><br></br>
+			<label for="Email"> Email</label>
+			<input type="email" id="Email" name="Email" placeholder="XXXXXX@XXXX.com"><br></br>
+			<br>
+		</div>
+		
+		<div id ="appartment-specifications" class ="clearfix">
+			<b>Appartment Specifications</b><br><br>
+			<label for="Bed"> Beds:</label>
+			<select name="Bed" id="Bed">
+				<option value="Select">Select </option>
+				<option value="1-Bed">1 Bed</option>
+				<option value="2-Beds">2 Beds</option>
+			</select> <br></br>
 
-		Appartment Specifications<br>
-		<select required class ="combo">
-			<option value="Select">Select </option>
-			<option value="Test1">Test1</option>
-			<option value="Test2">Test2</option>
-			<option value="Test3">Test3</option>
-		</select> <br></br>
+			<label for="Bath"> Baths:</label>
+			<select name="Bath" id="Bath">
+				<option value="Select">Select </option>
+				<option value="1-Bath">1 Bath</option>
+				<option value="2-Baths">2 Baths</option>
+			</select> <br></br>
 
-		Max Payment
-		<div class="slidecontainer">
-			<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-		</div> <br></br>
-		<button type="submit">Apply</button>
+			Max Monthly Payment<br><br>
+			<div class="slidecontainer">
+				<input type="range" name="payment" min="100" max="1000" value="550" class="slider" id="myRange">
+				<p>Value: $<span id = "maxPayment"></span> </p>
+			</div> <br></br>
+
+			<script>
+			var slider = document.getElementById("myRange");
+			var output = document.getElementById("maxPayment");
+			output.innerHTML = slider.value;
+
+			slider.oninput = function() {
+				output.innerHTML = this.value;
+			}
+			</script>	
+		</div>
+		<div id = "apply-button">
+			<input type="submit" onclick="apply()" value="Apply">
+		</div>
 	</form>
 	
 	<div id="result"></div>

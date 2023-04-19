@@ -3,7 +3,8 @@ Link: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 */
 .slider {
     -webkit-appearance: none; /*Overides Default CSS Syles*/
-    width: 25%;
+    appearance: none;
+    width: 50%;
     height: 15px;
     border-radius: 5px;  
     background: #d3d3d3;
@@ -36,6 +37,7 @@ input[type=button], input[type=submit], input[type=reset], input[type=text] {
     text-decoration: wavy;
     margin: 4px 2px;
     cursor: pointer;
+    position: relative;
 
 }
 .combo{
@@ -55,11 +57,46 @@ h1{
     text-align:center;
 }
 body {
-    text-align: center;
+    text-align:center;
 }
+
 label {
     margin-right: 20px;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: large;
+}
+
+input{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 32px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.clearfix::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+#contact-info{
+    width: 30%;
+    float: left;
+    /*padding-left: 10%;*/
+    margin-left: 20%;
+}
+#appartment-specifications{
+    width: 30%;
+    float: right;
+    /*padding-right: 10%;
+    padding-top: 5%;*/
+    margin-right: 20%;
+}
+#apply-button{
+    clear: both;
 }
