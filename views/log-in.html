@@ -6,11 +6,12 @@
 	<title></title>
 
 	<link rel="stylesheet" href="/main.css" />
-	<link rel="stylesheet" href="/css/resident-links.css" />
+	<link rel="stylesheet" href="/css/log-in.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/29dc434267.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -20,39 +21,23 @@
 		<button><a href="../floor">Floor Plan & Amenities</a></button>
 		<button><a href="../tour">Schedule A Tour</a></button>
 		<button><a href="../apply">Apply</a></button>
-		<button class="active"><a href="../log-in">Resident Links</a></button>
+		<button><a href="../log-in">Resident Links</a></button>
 	</div>
 </div>
 
 <div id="content">
-<div class="container">
-	<a href="./resident-links/building-requests">
-	  <img src="/images/apartment-adobe3.jpeg" alt="Avatar" class="image" style="width:100%">
-	  <div class="middle">
-	    <div class="text">Maintenance Request</div>
-	  </div>
+    <main id="main-holder">
+        <h1>Sign In To Your Account</h1>
+        
+        <form id="login-form">
+          <li><input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <li><input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+         <li><input type="submit" value="Login" id="login-form-submit">
+        </form>
+      
+      </main>
 </div>
-
-<div class="container">
-	<a href="./resident-links/rent">
-	  <img src="/images/apartment-adobe3.jpeg" alt="Avatar" class="image" style="width:100%">
-	  <div class="middle">
-	    <div class="text">Make a Payment</div>
-	</div>
-	</a>
-</div>
-
-<div class="container">
-	<a href="./resident-links/forum">
-	  <img src="/images/apartment-adobe3.jpeg" alt="Avatar" class="image" style="width:100%">
-	  <div class="middle">
-	    <div class="text">Building Forum</div>
-	  </div>
-	</a>
-</div>
-
-</div>
-
-
 </body>
+
+<script type="text/javascript" src="/js/log-in.js"></script>
 </html>

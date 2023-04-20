@@ -41,6 +41,13 @@ app.get("/tour.css", (req, res) => {
   res.sendFile(path.join(__dirname + "/views/tour.css"));
 });
 
+app.get("/log-in", (req, res) => {
+  res.sendFile(__dirname + "/views/log-in.html");
+});
+app.get("/log-in.css", (req, res) => {
+  res.sendFile(path.join(__dirname + "/views/log-in.css"));
+});
+
 app.get("/resident-links", (req, res) => {
   res.sendFile(__dirname + "/views/resident-links.html");
 });
