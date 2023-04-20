@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+
 <div id="header">
-	<h1 class="title"><span style="font-weight:700;">Lorem Ipsum</span> Apartments</h1>
+	<h1 class="title"><span style="font-weight:700;">Alpine</span> Apartments</h1>
 	<div class="topnav">
 		<button><a href="../">Home</a></button>
 		<button><a href="../floor">Floor Plan & Amenities</a></button>
@@ -23,19 +23,43 @@
 		<button class="active"><a href="../resident-links">Resident Links</a></button>
 	</div>
 </div>
-	<h1>Rent</h1>
-	<div id="content">
-		<div class="left">
-			<h1>Lease Information</h1>
-			<p>Lease Start Date: </p>
-			<p>Lease End Date: </p>
-			<p>Balance Due: </p>
-		</div>
 
-		<div class="right">
-			<h2>Payment Information</h2>
-		</div>
+<div id="content">
+	<h1>Rent Payment</h1>
+	<div class="left">
+		<h2>Lease Information</h2><br><br>
+		<p>Lease Start Date: 02/01/2023 </p><br></br>
+		<p>Lease End Date: 02/01/2024</p><br></br>
+		<p>Balance Due: <span id="balance">$875</span> </p>
+
 
 	</div>
-</body>
-</html>
+
+	<div class="right">
+		<form id="rent_form">
+			<h2>Payment Information</h2><br><br>
+			<label label for="name"> Name: </label>
+			<input required type="text" id="name" name="name" placeholder="(first, last)"><br></br>
+			<label for="cardnum"> Card Number: </label>
+			<input required type="text" id="cardnum" name="cardnum" placeholder="XXXX-XXXX-XXXX-XXXX"><br></br>
+			<label for="exp"> Exp.: </label>
+			<input required type="text" id="exp" name="exp" placeholder="xx / xx"><br></br>
+			<br>
+			<label for="zipcode"> Zipcode</label>
+			<input required type="text" id="zipcode" name="zipcode" placeholder="xxxxx"><br></br>
+			<br>
+			<label for="payment">Payment</label>
+			<input required type="number" id="payment" name="payment" placeholder=" $"><br></br>
+			<br>
+			<div class="row">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="content" style="background-color: #fff;">
+	<div id="result"></div>
+</div>
+
+
+<script type="text/javascript" src="/js/rent.js"></script>

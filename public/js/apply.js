@@ -8,6 +8,6 @@
 
 		let name = document.getElementById('name').value
 		document.getElementById('result').innerHTML = `
-			<p>Thank you ${name} for submitting your payment</p>
+			<p>Thank you ${name} for submitting your application! We will get back to you shortly.</p>
 			`
     })

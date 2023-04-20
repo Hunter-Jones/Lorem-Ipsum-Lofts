@@ -1,15 +1,88 @@
-#content {
-    display: flex;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 10px 20px;
+input[type=button], input[type=submit], input[type=reset], input[type=text] {
     color: black;
+    padding: 16px 32px;
+    text-decoration: wavy;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+}
+textarea {
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.combo {
+    padding: 10px;
 }
 
-    #content .left {
-        flex: 65%;
-    }
 
-    #content .right {
-        flex: 35%;
-    }
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+
+form {
+    margin: 20px;
+    text-align:center;
+}
+
+label {
+    margin-right: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 32px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+    text-align: left;
+    width: 50%;
+}
+
+#submit {
+    float: none;
+    padding: 5px 10px;
+    background-color: #305252;
+    color: #ffffff;
+    border: solid 1.2px #373E40;
+    border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 25%;
+}
