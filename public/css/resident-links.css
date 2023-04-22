@@ -1,4 +1,5 @@
 #content {
+  background-color: #ffffff;
     max-width:1000px;
     margin:30px auto;
     padding:10px 20px;
@@ -11,6 +12,17 @@
     position: relative;
     width: 33.33%;
   }
+
+  .block {
+    padding:5px;
+    height:300px;
+  }
+
+.block img { 
+  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+}
   
   .image {
     opacity: 1;
@@ -41,7 +53,7 @@
   }
   
   .text {
-    background-color: #04AA6D;
+    background-color: #305252;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
