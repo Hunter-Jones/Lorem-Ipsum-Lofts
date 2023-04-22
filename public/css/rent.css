@@ -24,7 +24,7 @@ textarea {
 h1 {
     text-align: center;
 }
-h2{
+h2 {
     text-align: center;
 }
 
@@ -86,3 +86,5 @@ input {
     font-size: 15px;
     margin-right: 25%;
 }
+
+.clear { clear:both; }
