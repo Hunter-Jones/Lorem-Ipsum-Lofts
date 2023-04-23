@@ -86,3 +86,18 @@ h2 {
   button:hover {
 	cursor:pointer;
 }
+
+#result {
+    max-width:65%;
+    margin:0px auto;
+}
+
+#result p {
+    font-size: 18px;
+    font-weight:bold;
+    color:#f0f0f0;
+    background-color:#373E40;
+    padding:20px 10px;
+    display:block;
+    text-align: center;
+}

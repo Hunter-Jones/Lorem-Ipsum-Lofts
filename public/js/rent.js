@@ -24,3 +24,8 @@ form.addEventListener('submit', (e) => {
     }
 
 })
+
+function scrolldiv() {
+	var elem = document.getElementById("result");
+	elem.scrollIntoView({behavior:"smooth"});
+}

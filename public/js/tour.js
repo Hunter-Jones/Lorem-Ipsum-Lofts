@@ -15,3 +15,8 @@ console.log(form)
 			<p>Thank you ${first_name} ${last_name} for submitting your request. We will get back to you soon at ${phone}.</p>
 			`
     })
+
+	function scrolldiv() {
+		var elem = document.getElementById("result");
+		elem.scrollIntoView({behavior:"smooth"});
+	}

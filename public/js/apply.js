@@ -11,3 +11,8 @@
 			<p>Thank you ${name} for submitting your application! We will get back to you shortly.</p>
 			`
     })
+
+	function scrolldiv() {
+		var elem = document.getElementById("result");
+		elem.scrollIntoView({behavior:"smooth"});
+	}
